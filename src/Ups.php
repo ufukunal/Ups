@@ -16,7 +16,7 @@ class Ups {
       throw new UpsException("Ups Kargo Ayarları Girilmedi");
     }
 
-    $this->conf = $conf['customer_id'];
+    $this->conf = $conf;
 
     if(is_null($this->session_id)){
       $this->login();
